@@ -43,7 +43,7 @@ const Sidebar = () => {
     <div className='container'>
       <div className={`sidebar relative ${isActive ? 'active' : ''}`}>
         <div
-          className=' absolute right-[-10px] top-[4%]'
+          className=' absolute right-[-10px] top-[4%] z-10'
           onClick={() => setIsActive(!isActive)}
         >
           <div className='bg-[#ff971d] p-1 rounded-sm cursor-pointer'>
