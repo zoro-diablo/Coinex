@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  color: #bfbfbf;
+  .sidebar {
+    width: 259px;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #19191a;
+    transition: all 0.5s ease-in-out;
+    gap: 20px;
+    .head {
+      display: flex;
+      align-items: center;
+      height: fit-content;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 16px;
+      position: sticky;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.46);
+      scroll-behavior: smooth;
+      .title {
+        font-weight: 500;
+        color: white;
+        font-size: 21px;
+        margin-bottom: 2px;
+      }
+    }
+    .nav {
+      position: fixed;
+      width: 259px;
+      height: 90vh;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 7px;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+
+      &:hover::-webkit-scrollbar,
+      &:active::-webkit-scrollbar,
+      &.nav::-webkit-scrollbar-thumb {
+        opacity: 1;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #7e7d7d;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(30, 30, 30, 0.882);
+        border-radius: 0 0 5px 5px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    }
+  }
+}
+
+.selected {
+  color: #ff971d;
+}
+
+.sidebar.active {
+  width: 75px;
+}
+
+.sidebar.active .menu-btn {
+  transform: rotate(180deg);
+}
+
+.sidebar.active .logo-title {
+  display: none;
+}
+
+.sidebar.active .content-heading {
+  display: none;
+}
+
+.sidebar.active .arrow-bar {
+  display: none;
+}
+
+.sidebar.active .line-bar {
+  display: none;
+}
+.sidebar.active .news {
+  display: none;
+}
+
+.sidebar.active .sub-menus {
+  display: none;
+}
