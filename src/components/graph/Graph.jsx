@@ -1,6 +1,7 @@
 import './graph.scss'
 import { GiWallet } from 'react-icons/gi'
 import { GoDotFill } from 'react-icons/go'
+import ArearGraph from './Areagraph'
 
 const Graph = () => {
   return (
@@ -48,7 +49,9 @@ const Graph = () => {
           </div>
         </div>
       </div>
-      <div className='col-span-5'>3</div>
+      <div className='col-span-5 w-[95%] mx-auto'>
+        <ArearGraph />
+      </div>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import "./portfolio.scss"
 
 const Portfolio = () => {
   return (
-    <div className='container'>
+    <div className='container h-screen'>
       <div className='sidebar'>
         <Sidebar />
       </div>
