@@ -40,10 +40,10 @@ const Sidebar = () => {
     })
   }
   return (
-    <div className='container'>
+    <div className='container'> 
       <div className={`sidebar relative ${isActive ? 'active' : ''}`}>
         <div
-          className=' absolute right-[-10px] top-[4%] z-10'
+          className=' absolute right-[-10px] top-[3.5%] z-10'
           onClick={() => setIsActive(!isActive)}
         >
           <div className='bg-[#ff971d] p-1 rounded-sm cursor-pointer'>
@@ -53,13 +53,14 @@ const Sidebar = () => {
         <div className='head '>
           <div className='flex'>
             <img
-              src='/coinex_logo.svg'
-              alt='logo_coinex'
-              className='cursor-pointer'
+              src='/logo.png'
+              alt='fn'
+              className='cursor-pointer' 
+              width={40}
             />
           </div>
           <div className='user-details flex items-center'>
-            <p className='title logo-title cursor-pointer'>OINEX</p>
+            <p className='title logo-title cursor-pointer'>FnMoney</p>
           </div>
         </div>
         <div className='nav'>
