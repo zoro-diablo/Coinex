@@ -414,20 +414,20 @@ class ArearGraph extends React.Component {
     return (
       <div className=''>
         <div id='chart-timeline'></div>
-        <div className='flex justify-end gap-x-4 mb-5'>
-            <button id='one_month' onClick={this.handleOneMonthClick} className='bg-[#ff971d] text-black text-sm py-1 px-2 rounded-sm font-medium'>
+        <div className='flex justify-end gap-x-4 mb-5 mr-2'>
+            <button id='one_month' onClick={this.handleOneMonthClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
               One Month
             </button>
-            <button id='six_months' onClick={this.handleSixMonthsClick} className='bg-[#ff971d] text-black text-sm py-1 px-2 rounded-sm font-medium'>
+            <button id='six_months' onClick={this.handleSixMonthsClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
               Six Months
             </button>
-            <button id='one_year' onClick={this.handleOneYearClick} className='bg-[#ff971d] text-black text-sm py-1 px-2 rounded-sm font-medium'>
+            <button id='one_year' onClick={this.handleOneYearClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
               One Year
             </button>
-            <button id='ytd' onClick={this.handleYTDClick} className='bg-[#ff971d] text-black text-sm py-1 px-2 rounded-sm font-medium'>
+            <button id='ytd' onClick={this.handleYTDClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
               YTD
             </button>
-            <button id='all' onClick={this.handleAllClick} className='bg-[#ff971d] text-black text-sm py-1 px-2 rounded-sm font-medium'>
+            <button id='all' onClick={this.handleAllClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
               All
             </button>
         </div>
