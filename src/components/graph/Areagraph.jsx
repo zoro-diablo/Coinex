@@ -307,6 +307,7 @@ var options = {
     type: 'datetime',
     min: new Date('01 Mar 2012').getTime(),
     tickAmount: 6,
+
     labels: {
       style: {
         colors: '#ffffff9f',
@@ -320,13 +321,12 @@ var options = {
       },
     },
   },
+
   tooltip: {
-    theme:'dark',
+    theme: 'dark',
     x: {
       format: 'dd MMM yyyy',
-
     },
-    
   },
   fill: {
     colors: ['#fa8909'],
@@ -340,7 +340,7 @@ var options = {
   },
   stroke: {
     colors: ['#ffffffc9'],
-    width: 2,
+    width: 1,
   },
 }
 
@@ -415,21 +415,41 @@ class ArearGraph extends React.Component {
       <div className=''>
         <div id='chart-timeline'></div>
         <div className='flex justify-end gap-x-4 mb-5 mr-2'>
-            <button id='one_month' onClick={this.handleOneMonthClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
-              One Month
-            </button>
-            <button id='six_months' onClick={this.handleSixMonthsClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
-              Six Months
-            </button>
-            <button id='one_year' onClick={this.handleOneYearClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
-              One Year
-            </button>
-            <button id='ytd' onClick={this.handleYTDClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
-              YTD
-            </button>
-            <button id='all' onClick={this.handleAllClick} className='bg-[#ff971d] hover:text-gray-300 text-black text-sm py-1 px-2 rounded-sm font-medium'>
-              All
-            </button>
+          <button
+            id='one_month'
+            onClick={this.handleOneMonthClick}
+            className='bg-[#ff971d] hover:bg-[#ff961de1] hover:text-black text-[#ffffffda] text-sm py-1 px-2 rounded-sm font-medium'
+          >
+            One Month
+          </button>
+          <button
+            id='six_months'
+            onClick={this.handleSixMonthsClick}
+            className='bg-[#ff971d] hover:bg-[#ff961de1] hover:text-black text-[#ffffffda] text-sm py-1 px-2 rounded-sm font-medium'
+          >
+            Six Months
+          </button>
+          <button
+            id='one_year'
+            onClick={this.handleOneYearClick}
+            className='bg-[#ff971d] hover:bg-[#ff961de1] hover:text-black text-[#ffffffda] text-sm py-1 px-2 rounded-sm font-medium'
+          >
+            One Year
+          </button>
+          <button
+            id='ytd'
+            onClick={this.handleYTDClick}
+            className='bg-[#ff971d] hover:bg-[#ff961de1] hover:text-black text-[#ffffffda] text-sm py-1 px-2 rounded-sm font-medium'
+          >
+            YTD
+          </button>
+          <button
+            id='all'
+            onClick={this.handleAllClick}
+            className='bg-[#ff971d] hover:bg-[#ff961de1] hover:text-black text-[#ffffffda] text-sm py-1 px-2 rounded-sm font-medium'
+          >
+            All
+          </button>
         </div>
       </div>
     )

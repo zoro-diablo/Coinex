@@ -20,7 +20,7 @@ const Graph = () => {
       </div>
       <div className='col-span-3 mt-[25px] mr-[24px] bg-[#313135] px-[25px] py-[20px] rounded-md'>
         <span className='text-[#ff971d]'>Recently Trade</span>
-        <div className='flex mt-[17px] gap-x-4 '>
+        <div className='flex mt-[17px] justify-between  mr-2'>
           <div className='flex'>
             <GoDotFill size={22} className='text-[#ff971d]' />
             <span className='text-sm'>LSK $512.43</span>
@@ -34,7 +34,7 @@ const Graph = () => {
             <span className='text-sm'>BTC $112.43</span>
           </div>
         </div>
-        <div className='flex mt-[12px] gap-x-4 '>
+        <div className='flex mt-[12px] justify-between mr-2 '>
           <div className='flex'>
             <GoDotFill size={22} className='text-[#ff971d]' />
             <span className='text-sm'>FTC $512.43</span>
