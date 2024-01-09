@@ -1,3 +1,4 @@
+import TableSwitch from "../../components/Table/TableSwitch"
 import Graph from "../../components/graph/Graph"
 import Navbar from "../../components/navbar/Navbar"
 import Sidebar from "../../components/sidebar/Sidebar"
@@ -20,7 +21,7 @@ const Portfolio = () => {
           <div className='col-span-2 row-span-4 mt-[32px] mr-[32px]'>
             <Transaction />
           </div>
-          <div className='col-span-4 row-span-2 bg-black  ml-[32px]'>3</div>
+          <div className='col-span-4 row-span-2 bg-black  ml-[32px]'><TableSwitch /></div>
           <div className='col-span-2 row-span-1 bg-black  mr-[32px]'>4</div>
           <div className='col-span-5 bg-black'>5</div>
         </div>

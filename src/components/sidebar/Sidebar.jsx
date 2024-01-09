@@ -40,7 +40,7 @@ const Sidebar = () => {
     })
   }
   return (
-    <div className='container'> 
+    <div className='container'>
       <div className={`sidebar relative ${isActive ? 'active' : ''}`}>
         <div
           className=' absolute right-[-10px] top-[3.5%] z-10'
@@ -51,12 +51,12 @@ const Sidebar = () => {
           </div>
         </div>
         <div className='head '>
-          <div className='flex'>
+          <div className='flex mt-1'>
             <img
               src='/logo.png'
               alt='fn'
-              className='cursor-pointer' 
-              width={40}
+              className='cursor-pointer'
+              width={50}
             />
           </div>
           <div className='user-details flex items-center'>
@@ -729,7 +729,7 @@ const Sidebar = () => {
               <p className='text-[16px] mx-5'>
                 Be more secure with Pro Feature
               </p>
-              <button className='bg-[#dd8219] w-[180px] mx-auto rounded-[5px] py-2 mt-5 mb-5'>
+              <button className='bg-[#dd8219] hover:bg-[#dd8219e2] text-[#ffffffed] hover:text-black font-medium w-[180px] mx-auto rounded-[5px] py-2 mt-5 mb-5'>
                 Upgrade Now
               </button>
             </div>
