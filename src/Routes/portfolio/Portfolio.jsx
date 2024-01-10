@@ -9,20 +9,20 @@ import './portfolio.scss'
 
 const Portfolio = () => {
   return (
-    <div className='container h-screen'>
-      <div className='sidebar'>
+    <div className='container w-full'>
+      <div className='sidebar '>
         <Sidebar />
       </div>
-      <div className='main bg-[#0c0c0c0;]'>
+      <div className='main w-full'>
         <Navbar />
-        <div className=' w-100% grid grid-cols-6 grid-rows-5 gap-[32px]'>
-          <div className='col-span-4 row-span-3  mt-[32px] ml-[32px]'>
+        <div className='grid grid-cols-6 grid-rows-5 gap-[32px] w-full'>
+          <div className='col-span-4 row-span-3 mt-[32px] ml-[32px]'>
             <Graph />
           </div>
           <div className='col-span-2 row-span-4 mt-[32px] mr-[32px]'>
             <Transaction />
           </div>
-          <div className='col-span-4 row-span-2 bg-black  ml-[32px]'>
+          <div className='col-span-4 row-span-2 bg-black ml-[32px]'>
             <TableSwitch />
           </div>
           <div className='col-span-2 row-span-1 mr-[32px]'>
