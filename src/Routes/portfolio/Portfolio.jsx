@@ -22,14 +22,14 @@ const Portfolio = () => {
           <div className='col-span-2 row-span-4 mt-[32px] mr-[32px]'>
             <Transaction />
           </div>
-          <div className='col-span-4 row-span-2 bg-black ml-[32px]'>
+          <div className='col-span-4 row-span-2  ml-[32px]'>
             <TableSwitch />
           </div>
           <div className='col-span-2 row-span-1 mr-[32px]'>
             <Account />
           </div>
         </div>
-        <div className='col-span-5 bg-black mt-2'>
+        <div className='col-span-5  mt-2'>
           <Footer />
         </div>
       </div>
