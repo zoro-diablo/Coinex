@@ -12,7 +12,7 @@ const Account = () => {
       <div className='line-bar inset-x-0 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-600 to-transparent opacity-75'></div>
       <div className=''>
         <div className='flex  items-center my-4 justify-between'>
-          <div className='pl-5 flex gap-x-4 pb-2'>
+          <div className='pl-5 flex gap-x-4 py-4 mb-2'>
             <img src='/coin.png' alt='coin' width={42} />
             <div>
               <div>
@@ -21,7 +21,7 @@ const Account = () => {
                 </p>
               </div>
               <div >
-                <span className='text-[14px] '>Add basic account Security</span>
+                <span className='text-[14px]'>Add basic account Security</span>
               </div>
             </div>
           </div>
