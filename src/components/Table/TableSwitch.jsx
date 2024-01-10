@@ -5,13 +5,13 @@ const TableSwitch = () => {
     <div className='bg-[#202022] rounded-md'>
       <div className='flex items-center justify-between px-[24px] pt-[24px] '>
         <div className='flex items-center gap-4 text-[#ff971d] text-[16px]'>
-          <div className='border-b-[3px] hover:border-[#ff971d] pb-4 border-transparent'>
+          <div className='border-b-[3px] hover:border-[#ff971d] pb-4 border-transparent cursor-pointer'>
             Active Orders
           </div>
-          <div className='border-b-[3px] hover:border-[#ff971d] pb-4 border-transparent'>
+          <div className='border-b-[3px] hover:border-[#ff971d] pb-4 border-transparent cursor-pointer'>
             Filled and Cancelled Orders
           </div>
-          <div className='border-b-[3px] hover:border-[#ff971d] pb-4 border-transparent'>
+          <div className='border-b-[3px] hover:border-[#ff971d] pb-4 border-transparent cursor-pointer'>
             My Trades
           </div>
         </div>
